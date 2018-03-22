@@ -1,0 +1,37 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha *.test.js",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "dev-win": "eslint src/*/*.js && eslint src/*.js && npm run watch",
+    "dev-unix": "eslint src/*/*.js && eslint src/*.js && npm run watch",
+    "devw": "npm run dev-win",
+    "devm": "npm run dev-unix",
+    "devl": "npm run dev-unix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "cors": "^2.8.4",
+    "eslint": "^3.17.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "mocha": "^4.0.1",
+    "mongoose": "^4.13.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.4.0",
+    "sinon": "^4.1.2"
+  }
+}
