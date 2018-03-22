@@ -26,7 +26,7 @@ describe('/strings/:id/reviews', () => {
       .post('/register')
       .send(newUser)
       .end((err, res) => {
-        user = res.body
+        user = res.body;
         const string1 = new StringModel({
           title: 'aaaa',
           content: 'aaaa',
@@ -40,7 +40,7 @@ describe('/strings/:id/reviews', () => {
         string1.save()
           .then((newString) => {
             stringId = newString.id;
-              done();
+            done();
           });
       });
   });
